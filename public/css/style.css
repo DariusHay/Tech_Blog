@@ -1,0 +1,18 @@
+.blog {
+    margin: auto;
+    width: 50%;
+    background-color: palevioletred;
+}
+.blogTitles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+#blogBG {
+    margin: auto;
+    margin-top: 5%;
+    width: 50%;
+    background-color: palevioletred;
+}

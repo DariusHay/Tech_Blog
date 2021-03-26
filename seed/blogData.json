@@ -1,0 +1,17 @@
+[
+    {
+        "name": "IBM",
+        "text": "IBM is a great company to invest stock in.",
+        "user_id": 1
+    },
+    {
+        "name": "JavaScript",
+        "text": "I love to code using the JavaScript language.",
+        "user_id": 2
+    },
+    {
+        "name": "Node.js",
+        "text": "Node.js is a great tool to use in backend coding.",
+        "user_id": 3
+    }
+]
