@@ -3,8 +3,14 @@
         {{name}}
     </h2>
     <hr style="color: white;">
-    <h4 style="text-align: center; margin-top:4%; color:white;">Created by {{user.name}} on {{format_date date_created}}</h4>
+    <h4 style="text-align: center; margin-top:4%; color:white;">Created by {{user.name}} on {{format_date date_created}}
+    </h4>
     <div style="margin: 0% 5% 0% 5%; background-color: white; border-radius: 5px;">
         <p style="margin: 5%; color: palevioletred;">"{{text}}"</p>
     </div>
+    {{#if logged_in}}
+    <div class="center">
+        <button style="margin: auto" class="btn btn-sm btn-update" data-id="{{blog.id}}">UPDATE</button>
+    </div>
+    {{/if}}
 </div>
