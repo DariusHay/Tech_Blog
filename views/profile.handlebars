@@ -23,18 +23,35 @@
         </form>
     </div>
     {{#if blogs.length}}
-        <h2 style="text-align: center; margin-top:4%;margin-bottom:4%;">
-            Current blogs
-        </h2>
+    <h2 style="text-align: center; margin-top:4%;margin-bottom:4%;">
+        Current blogs
+    </h2>
 
     {{#each blogs as |blog|}}
     <div id="blogBG">
-        <h4 style="text-align: center; margin-top:4%;"><u><a style=" color:white;" href="/blogs/{{blog.id}}">{{blog.name}}</a></u>
+        <h4 style="text-align: center; margin-top:4%;"><u><a style=" color:white;"
+                    href="/blogs/{{blog.id}}">{{blog.name}}</a></u>
         </h4>
         <div class="center">
             <button style="margin: auto" class="btn btn-sm btn-danger" data-id="{{blog.id}}">DELETE</button>
         </div>
     </div>
+    {{!-- <div id="blogBG">
+        <h2 style="text-align: center; margin-top:4%;margin-bottom:4%; color:white;">
+            {{name}}
+        </h2>
+        <hr style="color: white;">
+        <h4 style="text-align: center; margin-top:4%; color:white;">Created by {{name}} on {{format_date
+            date_created}}
+        </h4>
+        <div style="margin: 0% 5% 0% 5%; background-color: white; border-radius: 5px;">
+            <p style="margin: 5%; color: palevioletred;">"{{text}}"</p>
+        </div>
+        <div class="center">
+            <button style="margin: auto" class="btn btn-sm btn-danger" data-id="{{id}}">DELETE</button>
+            <button style="margin: auto" class="btn btn-sm btn-comment" data-id="{{id}}">add comment</button>
+        </div>
+    </div> --}}
     {{/each}}
     {{/if}}
 
