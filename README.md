@@ -23,7 +23,7 @@ These are the required npm package installments needed to use create this applic
 
 This application has a database that allows users to loging and saves certain session information. It also saves user data and blog data. This is the application deployed via Heroku.
 
-https://arcane-anchorage-86809.herokuapp.com/
+https://techblogcreate.herokuapp.com/
 
 ## Contributing
 
