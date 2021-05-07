@@ -8,9 +8,17 @@
     <div style="margin: 0% 5% 0% 5%; background-color: white; border-radius: 5px;">
         <p style="margin: 5%; color: palevioletred;">"{{text}}"</p>
     </div>
+    {{#if comments}}
+    {{#each comments}}
+    <div>
+        <p style="color: white;">{{comment}}</p>
+    </div>
+    {{/each}}
+    {{/if}}
     {{#if logged_in}}
     <div class="center">
-        <button style="margin: auto" class="btn btn-sm btn-comment" data-id="{{blog.id}}">add comment</button>
+        <textarea style="background-color: white; width: 60%;display: block;margin-left: auto;margin-right: auto;" name="" id="comment" cols="30" rows="10"></textarea>
+        <button style="margin: auto" class="btn btn-sm btn-comment" data-id="{{id}}">add comment</button>
     </div>
     {{/if}}
 </div>
